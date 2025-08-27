@@ -1,0 +1,149 @@
+.landing {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* On commence le contenu en haut */
+  text-align: center;
+  background-color: #0f3a48; /* Bleu foncé du logo */
+  color: white;
+}
+
+.appbackground {
+  width: 180px; /* taille réduite */
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.landing h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+.landing p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.ctabutton {
+  background-color: #fbbf24; /* Jaune vif du logo */
+  color: #111827;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.ctabutton:hover {
+  background-color: #f59e0b; /* Jaune plus foncé */
+  transform: scale(1.05);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.feature-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.services h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4facfe, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+.services h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4facfe, #8e2de2);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 services par ligne */
+  gap: 20px;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.serviceItem img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: contain; /* conserve l’image entière */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.serviceItem h3 {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.serviceItem p {
+  font-size: 14px;
+  font-weight: bold; /* description en gras */
+  color: #555;
+}
+
+/* Bouton centré */
+
